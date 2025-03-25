@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <h1>Введите пароль</h1>
+        <form id="loginForm">
+            <label for="password">Пароль:</label>
+            <input type="password" id="password" name="password" placeholder="Введите ваш пароль" required>
+            <button type="submit">Войти</button>
+        </form>
+        <div class="error-message" id="error-message"></div>
+        <div class="success-message" id="success-message"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

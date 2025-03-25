@@ -1,0 +1,89 @@
+/* Основные стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: green;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.login-container {
+    text-align: center;
+    border: 2px solid green;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    background-color: #111;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+input {
+    background-color: #222;
+    color: green;
+    border: 1px solid green;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 80%;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+}
+
+input:focus {
+    border-color: yellow;
+}
+
+button {
+    background-color: green;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    width: 80%;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: yellow;
+    color: black;
+}
+
+.error-message {
+    color: red;
+    margin-top: 15px;
+    font-size: 1rem;
+}
+
+.success-message {
+    color: green;
+    margin-top: 15px;
+    font-size: 1rem;
+    display: none; /* Скрыт по умолчанию */
+}
